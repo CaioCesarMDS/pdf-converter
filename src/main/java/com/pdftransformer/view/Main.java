@@ -1,4 +1,4 @@
-package com.caiocesarmds.pdftransformer;
+package com.pdftransformer;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,9 +11,9 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/layout.fxml"));
 
-        Scene scene = new Scene(root, 600, 400);
+        Scene scene = new Scene(root, 900, 700);
 
-        stage.setTitle("JavaFX App");
+        stage.setTitle("PDF Transformer");
         stage.setScene(scene);
         stage.show();
     }

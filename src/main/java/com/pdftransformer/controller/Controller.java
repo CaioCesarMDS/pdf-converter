@@ -1,4 +1,4 @@
-package com.caiocesarmds.pdftransformer;
+package com.pdftransformer;
 
 import javafx.fxml.FXML;
 
