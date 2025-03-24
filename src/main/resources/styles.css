@@ -1,0 +1,42 @@
+.container {
+    -fx-background-color: #30323D;
+    -fx-font-family: "Inter";
+}
+
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+}
+
+.combo-box .list-view {
+    -fx-padding: 0 0 38px 0;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+
+.button {
+    -fx-background-color: #5C80BC;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 40px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #4D7CC7;
+}
