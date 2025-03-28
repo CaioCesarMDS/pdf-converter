@@ -1,19 +1,33 @@
-.container {
-    -fx-background-color: #30323D;
-    -fx-font-family: "Inter";
+* {
+    -fx-font-family: "Inter, sans-serif";
+    -primary-color: #30323D;
+    -secondary-color: #5C80BC;
+    -tertiary-color: #4D7CC7;
+    -gray: #ccc;
 }
 
+.container {
+    -fx-background-color: -primary-color;
+}
 
 .combo-box {
     -fx-background-color: white;
-    -fx-border-color: #ccc;
+    -fx-border-color: -gray;
     -fx-border-radius: 5px;
     -fx-padding: 5px;
     -fx-cursor: hand;
+    -fx-font-weight: bold;
 }
 
-.combo-box .list-view {
-    -fx-padding: 0 0 38px 0;
+.combo-box .list-cell:hover {
+    -fx-background-color: -gray;
+}
+
+
+.combo-box .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: -primary-color;
+    -fx-padding: 5px 10px;
 }
 
 .label {
@@ -28,7 +42,7 @@
 }
 
 .button {
-    -fx-background-color: #5C80BC;
+    -fx-background-color: -secondary-color;
     -fx-text-fill: white;
     -fx-font-size: 16px;
     -fx-font-weight: bold;
@@ -38,5 +52,14 @@
 }
 
 .button:hover {
-    -fx-background-color: #4D7CC7;
+    -fx-background-color: -tertiary-color;
+}
+
+.popup-notification {
+    -fx-background-color: rgba(0, 0, 0, 0.75);
+    -fx-text-fill: white;
+    -fx-padding: 50px 100px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
 }

@@ -1,6 +1,6 @@
-package com.pdftransformer;
+package com.pdfconverter;
 
-import com.pdftransformer.view.Main;
+import com.pdfconverter.view.Main;
 
 public class PdfTransformerApplication {
     public static void main(String[] args) {
