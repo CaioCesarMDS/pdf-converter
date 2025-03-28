@@ -1,6 +1,6 @@
 package com.pdfconverter.controller;
 
-import com.pdfconverter.exceptions.UnsuccessfulConversion;
+import com.pdfconverter.exceptions.UnsuccessfulConversionException;
 import javafx.fxml.FXML;
 import javafx.animation.*;
 import javafx.stage.*;
@@ -61,7 +61,7 @@ public class Controller {
     }
 
     @FXML
-    private void convertFile() throws UnsuccessfulConversion {
+    private void convertFile() throws UnsuccessfulConversionException {
         String format = formats.getSelectionModel().getSelectedItem();
 
         String formatLower = format.toLowerCase();
@@ -78,7 +78,7 @@ public class Controller {
                     case "png":
                 }
             } catch (Exception e) {
-                throw new UnsuccessfulConversion(e.getMessage());
+                throw new UnsuccessfulConversionException(e.getMessage());
             }
             return;
         }

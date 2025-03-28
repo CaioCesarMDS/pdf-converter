@@ -1,6 +1,6 @@
-package com.pdftransformer.view;
+package com.pdfconverter.view;
 
-import com.pdftransformer.controller.Controller;
+import com.pdfconverter.controller.Controller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -20,7 +20,7 @@ public class Main extends Application {
         scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
 
         stage.getIcons().add(new Image("/images/pdf-icon.png"));
-        stage.setTitle("PDF Transformer");
+        stage.setTitle("PDF Converter");
         stage.setResizable(false);
         stage.setScene(scene);
 
